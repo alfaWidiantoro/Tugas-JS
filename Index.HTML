@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 4 - JavaScript</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Tugas 4 - JavaScript</h1>
+        <p><strong>Nama: Aloysius Alfredo Widiantoro</strong></p>
+        <p><strong>Nim: 235314077</strong></p>
+        <img src="../Foto/foto.jpg" alt="Foto Anda">
+    </div>
+
+    <div class="container" id="container">
+        <div class="form-group">
+            <label for="nama">Nama :</label>
+            <input type="text" id="nama" placeholder="Teks Nama" pattern="[A-Za-z\s]+" title="Hanya huruf dan spasi yang diperbolehkan">
+            <div id="namaError" class="error">Nama tidak boleh kosong, maksimal 50 karakter, dan hanya boleh huruf!</div>
+        </div>
+        <div class="form-group">
+            <label for="jumlahPilihan">Jumlah Pilihan :</label>
+            <input type="number" id="jumlahPilihan" placeholder="Jumlah" min="1" max="10">
+            <div id="jumlahError" class="error">Jumlah Pilihan harus antara 1 dan 10!</div>
+        </div>
+        <button onclick="submitStep1()">OK</button>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>
